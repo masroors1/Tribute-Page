@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign In</title>
+        <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(to right,rgb(129, 225, 232),rgb(63, 136, 208),rgb(141, 99, 181),rgb(196, 13, 196));
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        }
+        .wrapper{
+            width: 350px;
+            height: 600px;
+            background-color: white;
+            padding: 30px;
+            box-shadow: rgba( 0,0,0,0.2) 0px 0px 10px;
+            border-radius: 10px;
+        }
+        h1{
+            font-size: 30px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 40px;
+            
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            flex: 1;
+            min-height: 40%;
+            margin: 10px 0px;
+            padding: 5px;
+            font-size: 18px;
+        }
+        input[type=submit]{
+            margin-top: 30px;
+            border: 1px solid gray;
+            border-radius: 60px;
+            color: white;
+            background-image: linear-gradient(to right,rgb(129, 225, 232),rgb(106, 159, 212),rgb(167, 135, 197),rgb(220, 18, 220));
+        }
+        input[type=email],input[type=password]{
+            border: none;
+            border-bottom: 2px solid rgb(210, 208, 208);
+            font-size: 17px;color: grey;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        
+        button{
+            background-size:cover;
+            border-radius: 200px;
+            height: 40px;
+            width: 40px;
+            }
+        .images{
+            text-align: center;
+            margin-top: 15px;
+        }
+        h1{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .input-icons i {
+            position:absolute;
+        }
+          
+        .input-icons {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+          
+        .icon {
+            padding: 20px;
+            color: black;
+            min-width: 50px;
+            text-align: center;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            
+
+            
+        }
+
+    
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="wrapper">
+                <h1>Login</h1>
+                <form>
+                    <label style="font-size: 15px;">Username</label>
+                    <div class="input-icons">
+                        <i class="fa fa-user icon"></i>
+                        <input class="input-field" type="email" placeholder="Type your username">
+                    </div>
+                    <label style="font-size: 15px;">Password</label>
+                    <div class="input-icons">
+                        <i class="fa fa-key icon"></i>
+                        <input class="input-field" type="password" placeholder="Type your password">
+                    </div>
+                    <label style="text-align: end; font-size: 15px;color:black;">Forgot Password ?</label>
+                    <input type="submit" value="Log In">
+                    <label style="text-align: center; font-size: 17px;color: black;margin-top: 25px;">or signup using</label>
+                   <div class="images">
+                    <a href="http://www.facebook.com" target="_blank">
+                        <img src="fb.png" alt="" height="41" width="41">
+                    </a>
+                    <a href="http://www.twitter.com" target="_blank">
+                        <img style="margin-left: 5px;" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" alt="" height="38" width="38">
+                    </a>
+                    <a href="http://www.google.com" target="_blank">
+                        <img style="border-radius: 50px; margin-left: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAh1BMVEXqQzX////qPCz74uDpNybpOSn1ranqQTLqPi/vf3jqPzDpNCLpMR7pLxv+9fT//Pz4ycbrSTv98O/tXlP62df85+X2ubXve3PrT0Lvcmn1sa3+8vHuaF7sVUntZFnylpD50c7xjYb0opzua2H3vrrvdWzymJP0pqH4xcLxiIHrTD/5zsvsWk8fLM26AAAHd0lEQVR4nO2d63ayOhCGERKDhINyVFtPVFttvf/r26L9dq0FkkhCwlrz/PSH8JLTTDIzsSwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgcBAXI0R9P6jwfUoRdj3dLyWJizbqB5+LzTifblMnyzLHSaf7ZVmcUUCRPWydxKZ4viin2aieeJufzh4dqkoP+6tT7jSI+yGb7hKKBieS4OBcpiFT3o0oG78GiOh+aQFcOntnN95Djx2vqD0MkQTjw5egvBvpxBpAQxJkCzffXUN+zKjZGgnC5cvT+irCpWWyRuyWUSd9V5bG9lUX7+Lu+i6EpW3rFlMDCd6eH3+PZEVgXDP
+                    aOJemr+JoYd2SfkHopNsE85do5xvUjK4ttwFvHGfGjEaUNJnW3YgXVLe0K8TfKdFXUZrQUz28VCZwNPqyXN0CXWurUOBo5Jw1+1XuTM0Q/CHWu2rgRIKV1kr0qrWb4gWvj/ss4ZvWJsRv6ltQr8BXxfp0C7SVj8FQr0B3JcdVaibSOwaJrXqZGK31rhNBqlhfpFmgr9JUq9C8TFhop1ig5jFouWfV06jmLmrhJ2aZ0Nl/bIq35JysD6cy3760fKRQt0Bf1KOPj5s1DijCtlfh2hj5weq0bNi60rwOXpb6hZi85cKj+K8PRGyEkrJGpO5Z1CKuyFK/PWDU7B14GCVH0wRaVGChmCYBy/nx/Nn4fkhq76KWu+Zvv3XA46ATOv8Z2PoF8hszcUF5nVdC19//GiXaBdoTToG5L7Lb6QabawvqF2ghvmkmPviCf0wTx4QuauENl8B0Lv6qrrvXbKpVEI+rCXP6zBYgwdr3Rnmb8CPQ/Z7Pw2WQvosOQYPgmkjLAQu0Ao5T3vGQBXoJW+B+yAItyvaanIGENdVDCHMPP/ocXATePfaO2YSF/iW7C5R5Urg341T6Wcic1Unj2ZAH4aWTnlhNuEO637EblBVS6QzYWLuCWZ10YYDh
+                    3AWPtXuRDr0J0QdD4WHgTWj5jP0ZZ9hL4QWfcVTxPnSFLKs7mg97LWR791+8PgWxJaDiayKGX7Hj3Dt0D5nTmUzFwsSaaHgNNu791lZUDHravsnGbc/IUTiVb+KzzO4lr0kqR6EjP3rYe2t/ZME7MOQoDD+lzzV20f5I7ifKUThKpO8lMPz7mLvXSFI4kT6Z4vfWB6bcnqEkhaX0yRS1H/zyz22SFObSnW26b30g91QqS6H85YI+xhP8hn8FlqRwK19h+xYGr80mTWEqfWvdb99JPPWt0JGvsN0s7V1hBm0ojGnjUIFCw+ZS+TONaeuhfIWm2TRf0tdD0+zSo3SFpvkW8u1S0/zDD+kKDfPxRxvp2xiG7dOoOCQxa69NwS6GYfulKs4QZO15y1GYSdd3ebP2c4vwyGlkyFGYKgj6aD97iiPefuOtl2MuWme2XEVYS8v5YVTNQrzGt4d4oKvWNtyoOKxsnmrC6+eWewbMCG1RcqLeeI7/L0VL6lPbvbVQyXFsQyxG9H9dGqmxGG7rMJTv/16pjacJ736UeGzpHtoEKrC7r9RtZIT304/EmCh/2qqQf9NEiJrBH/6eX6XFtZFZq0BuA0r0sY/Gd/TYbV9kPZmRHqcsgO4hvj
+                    T8u0BK8rzJpyRHRpTffn6NwNFoImVRZGU4vqoKtSbez6f900O/f5YR580KTorVhbH+xOpHTSacjFh9VoajorWi4v+PW9tDb3TPt6Cs3CqVcay3nJmGHvpN15wZmxXHmqmsU+dWzl1jD/2mW96TN2fl/5VKo8lxxhTYTSKxWalV0Upp0orq/EPCzqPmDoJ88g34ckj3T+WQVomy7ERx1dXNFOYBX/58xc7+U5/yoCyX++JQHDiqv02UV/xUlI9/+WM65vhXp4e0HIGaCi0lPx7x/AVXzZuih6KtQnUxfL4Zx/PP7afo/+A/p+yCSG2TYxKwP7odnI+cVZn6STwirkgNpbTAyG22xolL7YK7Auqxp8Qj8RpDpK7GUHV7iT8rcoEi0lZfOR3Cxdp+6kS5/+pEUd+fF+VWqEb2e3/5jU/W+hrfan29Libv4zxtccHq6WeauaG+XlsNUa8VhZXX3Kth028OrvK6iX+Y9p3Aqbz25QNxy5Kjhh7ql94TrfvPUFVfg/aek45EePV1hH8o9RRrwOu+JC51pYmrr+d9Q34gIr9E5TXZK6ZYY4qx+rr6VXSu1hxq9Xcj7HWXalB9v8VYf8kbjxEC3o2NfoEX1N0zExlylY6yu4Kcp/aVl
+                    aDmvqdl3daHLggtZN/ZFRYm3IR0h80KsRVkb971ecSXeXfewby78yyJ9x9GZt5/WIFtGXdY5jNT77C0qntIUcd7SKPc9LtWLWRvnh+PL+OVYTNoLdg+tAdPNuHsTO6fv6judBbdi3tZJlSnIyiK2L3coyw/BMO7fLy6W32SO8zJNZ5uXil3CX7DIDbF80U5bTLM422+O1u1R28DgriY+sHnYjPOj9vUybLMcdLpflkWCQoosr0Bjb02LjpRdWYYVPg+vd45o/ulAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADH+A9sRf4S/vtsaAAAAAElFTkSu
+                    QmCC" alt="" height="36" width="36">
+                     </a>
+                    </div>
+                   <label style="text-align: center; font-size: 15px;color: grey;margin-top: 50px;">Or Signup Using</label>
+                   <label style="text-align: center; font-size: 15px;color: grey;margin-top: 10px;">SIGN UP</label>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
